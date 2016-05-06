@@ -1,0 +1,37 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	height: 400px;
+	background-color: #e7e7e7;
+}
+
+.menu {
+	width: 100%;                 /*定位会丢失宽度*/
+	height: 60px;
+	background-color: yellow;
+}
+.menu.dingwei {
+	position: fixed;
+	top: 0;
+}
+.story {
+	height: 1000px;
+	background-color: pink;
+	
+}
+.story.dingwei{
+	margin-top: 60px;
+}
+
+
+.go-top {
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}

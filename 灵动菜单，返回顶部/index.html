@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="../jquery-1.12.3.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(window).on('scroll',function(){
+				var header = $('.header').height(),
+					scrolltop = $(this).scrollTop(),
+					$menu = $('.menu');
+
+					// console.log(header +'-'+ scrolltop)
+				if(scrolltop > header){
+					$menu.add('.header').addClass('dingwei');
+				}else{
+					$menu.add('.header').removeClass('dingwei');
+				}
+
+
+			});
+
+			$('.go-top').on('click',function(){
+
+				// $(window).scrollTop(0);
+				$('body').animate({scrollTop:0})
+
+
+			})
+
+		})
+
+	</script>
+</head>
+<body>
+	<div class="header"></div>
+	<div class="menu"></div>
+	<div class="story"></div>
+
+	<div class="go-top"></div>
+</body>
+</html>
